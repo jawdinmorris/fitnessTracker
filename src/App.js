@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./logo192.png";
 import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
 import "./App.css";
 
 function App() {
@@ -23,118 +24,118 @@ function App() {
         </nav>
       </header>
       <section id="progress">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
-              <div class="well profile">
-                <div class="col-sm-12">
-                  <div class="col-xs-12 col-sm-8">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
+              <div className="well profile">
+                <div className="col-sm-12">
+                  <div className="col-xs-12 col-sm-8">
                     <h2>Progress</h2>
                     <p>
-                      <strong>Level: </strong> 0 (0/100xp){" "}
+                      <strong>Level: </strong> 0 (20/100xp){" "}
                     </p>
 
                     <p>
                       <strong>Activity Summary: </strong>
-                      <div class="tags">Jogged 1km in 3000 Secs</div>
-                      <div class="tags">Lifted 1kg in 12 Reps</div>
+                      <div className="tags">Jogged 1km in 3000 Secs 16/06</div>
+                      <div className="tags">Lifted 1kg in 12 Reps 16/06</div>
                     </p>
                   </div>
-                  <div class="col-xs-12 col-sm-4 text-center">
+                  <div className="col-xs-12 col-sm-4 text-center">
                     <figure>
                       <img
                         src={logo}
                         alt=""
-                        class="img-circle img-responsive"
+                        className="img-circle img-responsive"
                       />
-                      <figcaption class="ratings">
+                      <figcaption className="ratings">
                         <p>
                           Persist.
                           <a href="#">
-                            <span class="fa fa-star"></span>
+                            <span className="fa fa-star"></span>
                           </a>
                           <a href="#">
-                            <span class="fa fa-star"></span>
+                            <span className="fa fa-star"></span>
                           </a>
                           <a href="#">
-                            <span class="fa fa-star"></span>
+                            <span className="fa fa-star"></span>
                           </a>
                           <a href="#">
-                            <span class="fa fa-star"></span>
+                            <span className="fa fa-star"></span>
                           </a>
                           <a href="#">
-                            <span class="fa fa-star-o"></span>
+                            <span className="fa fa-star-o"></span>
                           </a>
                         </p>
                       </figcaption>
                     </figure>
                   </div>
                 </div>
-                <div class="col-xs-12 divider text-center">
-                  <div class="col-xs-12 col-sm-4 emphasis">
+                <div className="col-xs-12 divider text-center">
+                  <div className="col-xs-12 col-sm-4 emphasis">
                     <h2>
                       <strong>1</strong>
                     </h2>
                     <p>
                       <small>Workouts</small>
                     </p>
-                    <button class="btn btn-success btn-block">
-                      <span class="fa fa-plus-circle"></span> Add Workout{" "}
+                    <button className="btn btn-success btn-block">
+                      <span className="fa fa-plus-circle"></span> Add Workout{" "}
                     </button>
                   </div>
-                  <div class="col-xs-12 col-sm-4 emphasis">
+                  <div className="col-xs-12 col-sm-4 emphasis">
                     <h2>
                       <strong>2</strong>
                     </h2>
                     <p>
                       <small>Exercises</small>
                     </p>
-                    <button class="btn btn-info btn-block">
-                      <span class="fa fa-user"></span> View Exercises{" "}
+                    <button className="btn btn-info btn-block">
+                      <span className="fa fa-user"></span> View Exercises{" "}
                     </button>
                   </div>
-                  <div class="col-xs-12 col-sm-4 emphasis">
+                  <div className="col-xs-12 col-sm-4 emphasis">
                     <h2>
                       <strong>1</strong>
                     </h2>
                     <p>
                       <small>Recent Activity</small>
                     </p>
-                    <div class="btn-group dropup btn-block">
-                      <button type="button" class="btn btn-primary">
-                        <span class="fa fa-gear"></span> View Log{" "}
+                    <div className="btn-group dropup btn-block">
+                      <button type="button" className="btn btn-primary">
+                        <span className="fa fa-gear"></span> View Log{" "}
                       </button>
                       <button
                         type="button"
-                        class="btn btn-primary dropdown-toggle"
+                        className="btn btn-primary dropdown-toggle"
                         data-toggle="dropdown"
                       >
-                        <span class="caret"></span>
-                        <span class="sr-only">Toggle Dropdown</span>
+                        <span className="caret"></span>
+                        <span className="sr-only">Toggle Dropdown</span>
                       </button>
-                      <ul class="dropdown-menu text-left" role="menu">
+                      <ul className="dropdown-menu text-left" role="menu">
                         <li>
                           <a href="#">
-                            <span class="fa fa-envelope pull-right"></span> Send
-                            an email{" "}
+                            <span className="fa fa-envelope pull-right"></span>{" "}
+                            Send an email{" "}
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <span class="fa fa-list pull-right"></span> Add or
-                            remove from a list{" "}
+                            <span className="fa fa-list pull-right"></span> Add
+                            or remove from a list{" "}
                           </a>
                         </li>
-                        <li class="divider"></li>
+                        <li className="divider"></li>
                         <li>
                           <a href="#">
-                            <span class="fa fa-warning pull-right"></span>Report
-                            this user for spam
+                            <span className="fa fa-warning pull-right"></span>
+                            Report this user for spam
                           </a>
                         </li>
-                        <li class="divider"></li>
+                        <li className="divider"></li>
                         <li>
-                          <a href="#" class="btn disabled" role="button">
+                          <a href="#" className="btn disabled" role="button">
                             {" "}
                             Unfollow{" "}
                           </a>
@@ -150,6 +151,38 @@ function App() {
       </section>
       <section id="add-workout">
         <h2>Add Workout</h2>
+        <div className="container">
+          <Form>
+            <Form.Group controlId="exampleForm.ControlInput1">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control type="email" placeholder="name@example.com" />
+            </Form.Group>
+            <Form.Group controlId="exampleForm.ControlSelect1">
+              <Form.Label>Example select</Form.Label>
+              <Form.Control as="select">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </Form.Control>
+            </Form.Group>
+            <Form.Group controlId="exampleForm.ControlSelect2">
+              <Form.Label>Example multiple select</Form.Label>
+              <Form.Control as="select" multiple>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </Form.Control>
+            </Form.Group>
+            <Form.Group controlId="exampleForm.ControlTextarea1">
+              <Form.Label>Example textarea</Form.Label>
+              <Form.Control as="textarea" rows="3" />
+            </Form.Group>
+          </Form>
+        </div>
       </section>
       <section id="exercises">
         <h2>Exercises</h2>
