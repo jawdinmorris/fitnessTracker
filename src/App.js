@@ -12,7 +12,7 @@ function App() {
         <nav>
           <ul>
             <li>
-              <a href="#exercises">Exercises</a>
+              <a href="#activity-log">Activity Log</a>
             </li>
             <li>
               <a href="#add-workout">Add Workout</a>
@@ -51,21 +51,11 @@ function App() {
                       <figcaption className="ratings">
                         <p>
                           Persist.
-                          <a href="#">
-                            <span className="fa fa-star"></span>
-                          </a>
-                          <a href="#">
-                            <span className="fa fa-star"></span>
-                          </a>
-                          <a href="#">
-                            <span className="fa fa-star"></span>
-                          </a>
-                          <a href="#">
-                            <span className="fa fa-star"></span>
-                          </a>
-                          <a href="#">
-                            <span className="fa fa-star-o"></span>
-                          </a>
+                          <span className="fa fa-star"></span>
+                          <span className="fa fa-star-o"></span>
+                          <span className="fa fa-star-o"></span>
+                          <span className="fa fa-star-o"></span>
+                          <span className="fa fa-star-o"></span>
                         </p>
                       </figcaption>
                     </figure>
@@ -88,22 +78,22 @@ function App() {
                       <strong>2</strong>
                     </h2>
                     <p>
-                      <small>Exercises</small>
+                      <small>Activity Log</small>
                     </p>
                     <button className="btn btn-info btn-block">
-                      <span className="fa fa-user"></span> View Exercises{" "}
+                      <span className="fa fa-user"></span> View Activity Log{" "}
                     </button>
                   </div>
                   <div className="col-xs-12 col-sm-4 emphasis">
                     <h2>
-                      <strong>1</strong>
+                      <strong>20xp</strong>
                     </h2>
                     <p>
-                      <small>Recent Activity</small>
+                      <small>Gained Recently</small>
                     </p>
                     <div className="btn-group dropup btn-block">
                       <button type="button" className="btn btn-primary">
-                        <span className="fa fa-gear"></span> View Log{" "}
+                        <span className="fa fa-gear"></span> Rank Persist{" "}
                       </button>
                       <button
                         type="button"
@@ -153,39 +143,57 @@ function App() {
         <h2>Add Workout</h2>
         <div className="container">
           <Form>
-            <Form.Group controlId="exampleForm.ControlInput1">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="name@example.com" />
-            </Form.Group>
             <Form.Group controlId="exampleForm.ControlSelect1">
-              <Form.Label>Example select</Form.Label>
+              <Form.Label>WorkOut Type</Form.Label>
               <Form.Control as="select">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+                <option>Jog</option>
+                <option>Run</option>
+                <option>Weights (Shoulder/Back)</option>
+                <option>Weights (Arms)</option>
+                <option>Core</option>
               </Form.Control>
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlSelect2">
-              <Form.Label>Example multiple select</Form.Label>
-              <Form.Control as="select" multiple>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+              <Form.Label>Weight</Form.Label>
+              <Form.Control as="select">
+                <option>N/A</option>
+                <option>1kg</option>
+                <option>2kg</option>
+                <option>3kg</option>
+                <option>4kg</option>
+              </Form.Control>
+            </Form.Group>
+            <Form.Group controlId="exampleForm.ControlSelect3">
+              <Form.Label>Reps</Form.Label>
+              <Form.Control as="select">
+                <option>N/A</option>
+                <option>8</option>
+                <option>10</option>
+                <option>12</option>
+                <option>16</option>
+              </Form.Control>
+            </Form.Group>
+            <Form.Group controlId="exampleForm.ControlSelect4">
+              <Form.Label>Distance</Form.Label>
+              <Form.Control as="select">
+                <option>1km</option>
+                <option>2km</option>
+                <option>3km</option>
+                <option>4km</option>
+                <option>5km</option>
+                <option>N/A</option>
               </Form.Control>
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlTextarea1">
-              <Form.Label>Example textarea</Form.Label>
+              <Form.Label>Notes</Form.Label>
               <Form.Control as="textarea" rows="3" />
             </Form.Group>
+            <input type="submit" value="Submit" />
           </Form>
         </div>
       </section>
-      <section id="exercises">
-        <h2>Exercises</h2>
+      <section id="activity-log">
+        <h2>Activities</h2>
       </section>
     </div>
   );
